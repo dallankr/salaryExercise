@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.stream.DoubleStream;
 
 public class practice4 {
     public static void main(String[] args) {
@@ -44,7 +45,7 @@ public class practice4 {
 
         //////////////////////////////////////////
 
-        int[] salary = new int[5];
+        double[] salary = new double[5];
         Scanner in = new Scanner(System.in);
         System.out.println("please enter 5 salaries");
         salary[0] = in.nextInt();
@@ -57,40 +58,18 @@ public class practice4 {
 //                System.out.println(updated);
 //            }
 
-        for (int i = 1; i < salary.length; i++) {
+        for (int i = 0; i < salary.length; i++) {
 
-            if (salary[0] <= 1000) {
-                System.out.println(salary[0] * 1.15);
+            if (salary[i] <= 1000) {
+                salary[i] = salary[i] * 1.15;
             } else {
-                System.out.println(salary[0] * 1.12);
+                salary[i] = salary[i] * 1.12;
             }
-
-            if (salary[1] <= 1000) {
-                System.out.println(salary[1] * 1.15);
-            } else {
-                System.out.println(salary[1] * 1.12);
-            }
-
-            if (salary[2] <= 1000) {
-                System.out.println(salary[2] * 1.15);
-            } else {
-                System.out.println(salary[2] * 1.12);
-            }
-
-            if (salary[3] <= 1000) {
-                System.out.println(salary[3] * 1.15);
-            } else {
-                System.out.println(salary[3] * 1.12);
-            }
-
-            if (salary[4] <= 1000) {
-                System.out.println(salary[4] * 1.12);
-            } else {
-                System.out.println(salary[4] * 1.12);
-            }
-
-
+            System.out.println(salary[i]);
         }
+        System.out.println(salary[0] + salary[1] + salary[2] + salary[3] + salary[4]); //System.out.println(DoubleStream.of(salary).sum()); for the shorthand way of doing this
+        System.out.println(DoubleStream.of(salary).average()); //TODO why does it give me the optional double output
+
     }
 }
 
