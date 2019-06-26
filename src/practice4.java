@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class practice4 {
@@ -43,47 +44,56 @@ public class practice4 {
 
         //////////////////////////////////////////
 
-//        int[] salary = new int[5];
-//        double[] updated =  new double[5];
-//        Scanner in = new Scanner(System.in);
-//        System.out.println("please enter 5 salaries");
-//        salary[0] = in.nextInt();
-//        salary[1] = in.nextInt();
-//        salary[2] = in.nextInt();
-//        salary[3] = in.nextInt();
-//        salary[4] = in.nextInt();
-//
-//        updated[0] = salary[0] * 1.15;
-//
-//         if (salary[0] <= 1000) {
-//            System.out.println(salary[0] * 1.15);
-//        } else {
-//            System.out.println(salary[0] * 1.12);
-//        }
-//
-//        if (salary[1] <= 1000) {
-//            System.out.println(salary[1] * 1.15);
-//        } else {
-//            System.out.println(salary[1] * 1.12);
-//        }
-//
-//        if (salary[2] <= 1000) {
-//            System.out.println(salary[2] * 1.15);
-//        } else {
-//            System.out.println(salary[2] * 1.12);
-//        }
-//
-//        if (salary[3] <= 1000) {
-//            System.out.println(salary[3] * 1.15);
-//        } else {
-//            System.out.println(salary[3] * 1.12);
-//        }
-//
-//        if (salary[4] <= 1000) {
-//            System.out.println(salary[4] * 1.12);
-//        } else {
-//            System.out.println(salary[4] * 1.12);
-//        }
+        int[] salary = new int[5];
+        Scanner in = new Scanner(System.in);
+        System.out.println("please enter 5 salaries");
+        salary[0] = in.nextInt();
+        salary[1] = in.nextInt();
+        salary[2] = in.nextInt();
+        salary[3] = in.nextInt();
+        salary[4] = in.nextInt();
+
+//            for ( int updated: salary) {
+//                System.out.println(updated);
+//            }
+
+        for (int i = 1; i < salary.length; i++) {
+
+            if (salary[0] <= 1000) {
+                System.out.println(salary[0] * 1.15);
+            } else {
+                System.out.println(salary[0] * 1.12);
+            }
+
+            if (salary[1] <= 1000) {
+                System.out.println(salary[1] * 1.15);
+            } else {
+                System.out.println(salary[1] * 1.12);
+            }
+
+            if (salary[2] <= 1000) {
+                System.out.println(salary[2] * 1.15);
+            } else {
+                System.out.println(salary[2] * 1.12);
+            }
+
+            if (salary[3] <= 1000) {
+                System.out.println(salary[3] * 1.15);
+            } else {
+                System.out.println(salary[3] * 1.12);
+            }
+
+            if (salary[4] <= 1000) {
+                System.out.println(salary[4] * 1.12);
+            } else {
+                System.out.println(salary[4] * 1.12);
+            }
+
+
+        }
+    }
+}
+
 
 
         ////////////////////////////////////////////
@@ -161,8 +171,8 @@ public class practice4 {
 //            private String brand;
 //            private int speed;
 
-        }
-        }
+
+
 
 
 
