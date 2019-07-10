@@ -4,8 +4,8 @@ import java.util.Scanner;
 //import java.text.DecimalFormat;
 //import java.util.Scanner;
 //
-public class Main {
-    public static void main(String[] args) {
+//public class Main {
+   // public static void main(String[] args) {
 //        System.out.println("10");
 //        System.out.println(String.format("%,.2f", 1.22));
 //        System.out.println(1234+532);
@@ -17,27 +17,27 @@ public class Main {
         ////////////////////////////////////////////////////
 
 
-            String newProduct = "yes";
-         //  do {
-               while ( newProduct.equals("yes")) {
-                   System.out.println("please enter the type of product recieved");
-                   Scanner in = new Scanner(System.in);
-                   String productType = in.next();
-                   System.out.println("please enter the cost to us for each" +productType);
-                   int cost = in.nextInt();
-                   System.out.println("brand name");
-                   String brandName = in.next();
-                   System.out.println("please enter the number of " + productType + "in the shipment");
-                   int numProductInShipment = in.nextInt();
-                   int totalCostOfShipment = cost = numProductInShipment / 10;
-                   System.out.println("shipment summary:\n" +
-                           "The new product is " +productType + ".\n" +
-                           "This shipment included " +numProductInShipment + "from"
-                           + brandName + ".\n" + "The total value of the shipment was $" + totalCostOfShipment + ".\n");
-                   System.out.println("With GST " +totalCostOfShipment * 1.05);
-
-                   System.out.println("do you want to enter another product?");
-                   newProduct = in.next();
+//            String newProduct = "yes";
+//         //  do {
+//               while ( newProduct.equals("yes")) {
+//                   System.out.println("please enter the type of product recieved");
+//                   Scanner in = new Scanner(System.in);
+//                   String productType = in.next();
+//                   System.out.println("please enter the cost to us for each" +productType);
+//                   int cost = in.nextInt();
+//                   System.out.println("brand name");
+//                   String brandName = in.next();
+//                   System.out.println("please enter the number of " + productType + "in the shipment");
+//                   int numProductInShipment = in.nextInt();
+//                   int totalCostOfShipment = cost = numProductInShipment / 10;
+//                   System.out.println("shipment summary:\n" +
+//                           "The new product is " +productType + ".\n" +
+//                           "This shipment included " +numProductInShipment + "from"
+//                           + brandName + ".\n" + "The total value of the shipment was $" + totalCostOfShipment + ".\n");
+//                   System.out.println("With GST " +totalCostOfShipment * 1.05);
+//
+//                   System.out.println("do you want to enter another product?");
+//                   newProduct = in.next();
                    // entryCondition = in.nextInt();}
 
                    /////////////////////////////////////////////
@@ -169,9 +169,5 @@ public class Main {
                    // }
 //
 //}
-
-               }
-           } //while (newProduct == "");
-    }
 
 
